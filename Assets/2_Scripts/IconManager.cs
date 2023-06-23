@@ -9,6 +9,8 @@ public class IconManager : MonoBehaviour
     public static IconManager Instance;
 
     public Text IconNameText;
+    public Text SkillNameText;
+    public Text SkillDesText;
     public GameObject Icon;
 
     private void Awake()

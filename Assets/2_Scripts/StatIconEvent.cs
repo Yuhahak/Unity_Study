@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class StatIconEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class StatIconEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject IconDes;
     public Icon icon;
 
-    public GameObject UpdateText;
+    //public GameObject UpdateText;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -33,10 +33,10 @@ public class StatIconEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         IconManager.Instance.IconNameText.text = "";
     }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        UpdateText.gameObject.SetActive(true);
-    }
+    //public void OnPointerClick(PointerEventData eventData)
+    //{
+    //    UpdateText.gameObject.SetActive(true);
+    //}
 
 
 }
