@@ -1,0 +1,33 @@
+Dictionary<string, int> weaponDic = new Dictionary<string, int>();
+    public List<KeyValuePair<string, int>> list;
+
+    void PlusWeapon()
+    {
+        weaponDic.Add("1Weapon", 0);
+        weaponDic.Add("2Weapon", 1);
+        weaponDic.Add("3Weapon", 2);
+        weaponDic.Add("4Weapon", 3);
+
+    }
+
+    private void Start()
+    {
+        PlusWeapon();
+        ConvertToList();
+    }
+
+    public List<KeyValuePair<string, int>> ConvertToList()// 플레이어 데이터 저장시 호출하여 변환한 리스트 받아서 저장용 함수
+    {
+        list = new List<KeyValuePair<string, int>>(weaponDic);
+        return list;
+    }
+
+
+    public void ConvertToDic(List<KeyValuePair<string, int>> SkilList) // 리스트 받아서 딕셔너리 변환
+    {
+        weaponDic = new Dictionary<string, int>();
+        foreach (KeyValuePair<string, int> pair in SkilList)
+        {
+            weaponDic.Add(pair.Key, pair.Value);
+        }
+    }

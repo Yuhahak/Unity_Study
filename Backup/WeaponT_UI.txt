@@ -1,0 +1,60 @@
+public IconManager iconManager;
+    public WeaponT_Manager weaponT_Manager;
+
+
+    public GameObject WeaponDesTable;
+    public Icon icon;
+
+
+
+    private void Start()
+    {
+        iconManager.SkillNameText.text = "";
+        iconManager.SkillDesText.text = "";
+    }
+
+    private void Update()
+    {
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //public void onpointerenter(pointereventdata eventdata) //포인터를 올려놨을 때
+    //{
+    //    switch (icon.iconname) //아이콘의 참조되어있는 프리팹정보를 검사
+    //    {
+    //        case "main_weapon":
+    //            iconmanager.skillnametext.text += "main_weapon";
+    //            iconmanager.skilldestext.text += "main_weapon_dlqslekzzzzzzzzzzzzzzzzzzzzzzzzzzz.";
+    //            break;
+    //        case "sub_weapon":
+    //            iconmanager.skillnametext.text += "sub_weapon";
+    //            iconmanager.skilldestext.text += "sub_weaponzzzzzzzzzzzzzzzz~";
+    //            break;
+    //    }
+    //}
+
+    //public void onpointerexit(pointereventdata eventdata)  //포인터가 나갔을 때
+    //{
+    //    iconmanager.skillnametext.text = "";
+    //    iconmanager.skilldestext.text = "";
+
+    //}
