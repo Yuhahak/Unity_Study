@@ -1,0 +1,8 @@
+Overlay
+Sort Order 1
+1920 1080 
+expand
+
+배경 앵커프리셋
+
+Sprite -> Sprite Editor -> Image Type -> Sliced
