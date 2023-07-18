@@ -1,0 +1,38 @@
+할일 : 스킬노드에서 timescale을 멈추면 선도 안그어짐 
+timescale 대체 방법 생각해봐야함
+
+무기 장착 시 정보 넘겨주기 / 무기 장착 방식에 맞춰 제작 ( 무기 장착 스크립트가 나와야 가능)
+
+
+InGameMenu :
+
+ESCUI / ESC를 눌렀을 때 UI 관리
+TabUI / Tab을 눌렀을 때 UI 관리
+Icon / 스텟, 장비의 정보를 담는 스크립트
+
+PlayerUI :
+WeaponUI : 인게임 화면에서 무기 표시 스크립트
+
+=============================================================
+
+SkillTable :
+
+Attack / 스텟 아이콘 이벤트 (아이콘 Enter,Exit)
+	아이템의 정보를 저장
+
+StatIcon / 아이콘을 클릭했을 때 상태 저장
+SkillPoint / 스킬포인트
+
+IconManager / MouseFollow와 스텟정보창을 관리
+SkillTableDrag / 스킬창을 잡고 드래그하는 스크립트
+
+
+==============================================================
+
+WeaponTable :
+
+WeaponT_Manager / 무기의 정보가 담긴 프리팹을 리스트로 저장,
+					메인,서브버튼 관리
+WeaponT_UI / 무기창에서 무기를 클릭했을 때 스크립트
+
+
