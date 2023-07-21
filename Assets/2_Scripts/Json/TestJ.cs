@@ -33,7 +33,7 @@ public class TestJ : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        path = Application.persistentDataPath + "/playerSave";    // 경로 지정
+        path = Application.persistentDataPath + "/playerSave.json";    // 경로 지정
 
         if (File.Exists(path))
         {
@@ -51,6 +51,7 @@ public class TestJ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Data);
 
     }
 
